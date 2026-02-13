@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I have something for you ❤️</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: 'Segoe UI', cursive;
+        background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden;
+    }
+
+    /* First screen */
+    #cover{
+        text-align:center;
+        color:white;
+        animation: fadeIn 2s;
+        }
+
+    button{
+        padding:15px 35px;
+        font-size:20px;
+        border:none;
+        border-radius:30px;
+        background:white;
+        color:#ff4d6d;
+        cursor:pointer;
+        transition:0.3s;
+        margin-top:20px;
+    }
+
+    button:hover{
+        transform:scale(1.1);
+        background:#ffe5ec;
+    }
+
+    /* Letter screen */
+    #letter{
+        display:none;
+        background:rgba(255,255,255,0.95);
+        width:80%;
+        max-width:700px;
+        height:80vh;
+        overflow-y:auto;
+        padding:40px;
+        border-radius:20px;
+        box-shadow:0 0 30px rgba(0,0,0,0.2);
+        animation: fadeIn 1.5s;
+    }
+
+    h2{
+        color:#ff4d6d;
+        text-align:center;
+    }
+
+    p{
+        font-size:18px;
+        line-height:1.7;
+        color:#333;
+    }
+
+    @keyframes fadeIn{
+        from{opacity:0; transform:translateY(20px);}
+        to{opacity:1; transform:translateY(0);}
+    }
+</style>
+</head>
+
+<body>
+
+<!-- FIRST SCREEN -->
+<div id="cover">
+    <h1>Padmaangmo ly❤️</h1>
+    <h2>Khera Valentine demo matsor nng I got something for you  </h2>
+    <h2>and I hope you like it!</h2>
+    <button onclick="openLetter()">Open the Surprise</button>
+</div>
+
+<!-- LETTER -->
+<div id="letter">
+<h2>For You</h2>
+
+<p><b>Pama ly,</b> nothing special but I wnt you to know just how special you are to me.... </p>
+
+<p>So,You should know how I feel for you padma, with you it feels like there nothing in this world to me, that matters more than you.With you I feel confident,  I feel loved and I feel like I am someone who matters.</p>
+<p>I don't have to pretend around you. So I become a lil childish with you ,I feel safe enough to let my emotions out and say whatever is in my heart.</p>
+<p>These days its like every little thing you do matters to me , my days start to depend on your mood,if it's good than I'm happy and if it's not , it feels like something is missing, I feel happy when you notice and admire the small things I do ,and I get upset knowing I did something you didn't like.</p>
+
+<p>You alway say that "it's not your first time so you won't feel it special", but Iet me tell you why it will be special,I've never craved for a hug this much ,I've never wanted to hold someone's hand the way I want to hold yours. Yes, I've done these before but I've never craved for it,which I'm doing right now. I miss holding your hands.</p>
+
+<p>Might feel weird to you, but I've kissed you so many time's when I missed you, (ofc your photo). While sleeping I imagine you next to me,I just close my eyes and I'm right next to you. I get a very nice feeling when I stare at your photos,its something special that I can't explain ,it just makes me happy, smile .</p>
+
+<p>And I dream of us getting married one day, us staying together forever ,you and me being there for each other till the very end .</p>
+
+<p><b>I love you, and I always will.</b></p>
+
+</div>
+
+<script>
+function openLetter(){
+    document.getElementById("cover").style.display="none";
+    document.getElementById("letter").style.display="block";
+}
+</script>
+
+</body>
+</html>
